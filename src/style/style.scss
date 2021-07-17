@@ -10,6 +10,8 @@
 // GLOBAL CLASSES START
 html {
 	font-size: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -46,6 +48,19 @@ html {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.lightGray {
+	color: #868686;
+}
+
+.lightGray2 {
+	color: #a6a6a6;
+}
+
+.heading {
+	letter-spacing: 1.02px;
+	font-weight: 500;
 }
 // GLOBAL CLASSES END
 
@@ -97,7 +112,7 @@ html {
 
 // HEADER START
 .header_container {
-	position: fixed;
+	position: absolute;
 	top: 0%;
 	left: 0%;
 	width: 100%;
@@ -135,3 +150,87 @@ html {
 	font-weight: bold;
 }
 // HEADER END
+
+// SERVICE START
+.service_container {
+	.service_inner {
+		background-color: #eaeaea;
+	}
+
+	.caste_container {
+		right: -18.8%;
+		top: 0%;
+		height: 100%;
+
+		img {
+			height: 101%;
+		}
+	}
+}
+// SERVICE END
+
+// FEATURED GALLERY START
+.feature_container {
+	.gallery_inner1 {
+		.gallery-item:first-child {
+			grid-column: span 12;
+			grid-row: span 1;
+		}
+		.gallery-item:nth-child(2) {
+			grid-column: span 12;
+			grid-row: span 1;
+		}
+	}
+
+	.gallery_inner2 {
+		.gallery-item:first-child {
+			grid-column: span 52;
+			grid-row: span 1;
+		}
+		.gallery-item:nth-child(2) {
+			grid-column: span 49;
+			grid-row: span 1;
+		}
+		.gallery-item:nth-child(3) {
+			grid-column: span 48;
+			grid-row: span 1;
+		}
+		.gallery-item:nth-child(4) {
+			grid-column: span 48;
+			grid-row: span 1;
+		}
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(3, auto-flow);
+
+		img {
+			object-fit: cover;
+			display: block;
+		}
+
+		.gallery_inner1 {
+			grid-column: span 5;
+			grid-row: span 1;
+
+			.left {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(3, auto-flow);
+			}
+		}
+		.gallery_inner2 {
+			grid-column: span 7;
+			grid-row: span 1;
+
+			.right {
+				display: grid;
+				grid-template-columns: repeat(101, 1fr);
+				grid-template-rows: repeat(3, auto-flow);
+			}
+		}
+	}
+}
+// FEATURED GALLERY END

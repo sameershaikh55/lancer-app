@@ -9,6 +9,8 @@
 
 html {
   font-size: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -51,6 +53,19 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.lightGray {
+  color: #868686;
+}
+
+.lightGray2 {
+  color: #a6a6a6;
+}
+
+.heading {
+  letter-spacing: 1.02px;
+  font-weight: 500;
 }
 
 .hero_section {
@@ -96,7 +111,7 @@ html {
 }
 
 .header_container {
-  position: fixed;
+  position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -126,5 +141,92 @@ html {
 
 .active_nav {
   font-weight: bold;
+}
+
+.service_container .service_inner {
+  background-color: #eaeaea;
+}
+
+.service_container .caste_container {
+  right: -18.8%;
+  top: 0%;
+  height: 100%;
+}
+
+.service_container .caste_container img {
+  height: 101%;
+}
+
+.feature_container .gallery_inner1 .gallery-item:first-child {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.feature_container .gallery_inner1 .gallery-item:nth-child(2) {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.feature_container .gallery_inner2 .gallery-item:first-child {
+  grid-column: span 52;
+  grid-row: span 1;
+}
+
+.feature_container .gallery_inner2 .gallery-item:nth-child(2) {
+  grid-column: span 49;
+  grid-row: span 1;
+}
+
+.feature_container .gallery_inner2 .gallery-item:nth-child(3) {
+  grid-column: span 48;
+  grid-row: span 1;
+}
+
+.feature_container .gallery_inner2 .gallery-item:nth-child(4) {
+  grid-column: span 48;
+  grid-row: span 1;
+}
+
+.feature_container .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (auto-flow)[3];
+      grid-template-rows: repeat(3, auto-flow);
+}
+
+.feature_container .gallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.feature_container .gallery .gallery_inner1 {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.feature_container .gallery .gallery_inner1 .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (auto-flow)[3];
+      grid-template-rows: repeat(3, auto-flow);
+}
+
+.feature_container .gallery .gallery_inner2 {
+  grid-column: span 7;
+  grid-row: span 1;
+}
+
+.feature_container .gallery .gallery_inner2 .right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[101];
+      grid-template-columns: repeat(101, 1fr);
+  -ms-grid-rows: (auto-flow)[3];
+      grid-template-rows: repeat(3, auto-flow);
 }
 /*# sourceMappingURL=style.css.map */
