@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 92%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 88%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 76%;
+  }
+}
+
+.page_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(7, 7, 7, 0.35))), url("../assets/hero_bg.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(7, 7, 7, 0.35)), url("../assets/hero_bg.png");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_section .main_head {
+  top: 24%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2.5rem;
+}
+
+.hero_section .hero_text_content {
+  width: 52%;
+  bottom: 5%;
+  left: 8%;
+}
+
+.hero_section .hero_text_content h4 {
+  letter-spacing: 0.87px;
+  line-height: normal;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.hero_section .hero_text_content .bottomText {
+  width: 70%;
+}
+
+.hero_section .hero_text_content .bottomText p {
+  letter-spacing: 0.53px;
+  line-height: 21px;
+  color: #e7e7e7;
+  font-size: 1.125rem;
+}
+
+.header_container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.header_container ul li a {
+  letter-spacing: 1.08px;
+}
+
+.header_container .right_side {
+  margin-left: 6rem;
+}
+
+.header_container .logo img {
+  height: 140px;
+  width: auto;
+}
+
+.free_schedule {
+  background-color: rgba(6, 43, 70, 0.5);
+}
+
+.phone_icon {
+  height: 28px;
+  width: auto;
+}
+
+.active_nav {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
