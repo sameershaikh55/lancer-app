@@ -5,12 +5,14 @@ import { Route, Switch } from "react-router";
 
 // IMPORTING PAGES
 import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 function App() {
 	return (
 		<>
 			<Switch>
 				<Route exact path="/" component={Home} />
+				<Route exact path="/products" component={Products} />
 			</Switch>
 		</>
 	);

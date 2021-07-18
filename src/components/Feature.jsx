@@ -12,13 +12,12 @@ import f8 from "../assets/featured/f8.png";
 
 const Feature = () => {
 	const data = [f1, f4];
-	const data1 = [f3, f2, f5, f6, f7, f8];
+	const data1 = [f2, f3, f5, f6, f7, f8];
 	return (
 		<div className="feature_container my-5">
-			<div className="page_container">
-				<div className="container-fluid">
+			<div /* className="page_container" */>
+				<div /* className="container-fluid" */>
 					<h2 className="lightGray heading text-center mb-5">Featured</h2>
-
 					{/* <!-- Gallery --> */}
 					<div class="gallery">
 						<div className="gallery_inner1">
@@ -26,7 +25,7 @@ const Feature = () => {
 								{data.map((p, i) => {
 									return (
 										<div key={i} class="gallery-item">
-											<img src={p} class="w-100" alt="" />
+											<img src={p} alt="" />
 										</div>
 									);
 								})}
@@ -37,7 +36,7 @@ const Feature = () => {
 								{data1.map((p, i) => {
 									return (
 										<div key={i} class="gallery-item">
-											<img src={p} class="w-100" alt="" />
+											<img src={p} alt="" />
 										</div>
 									);
 								})}
