@@ -6,9 +6,9 @@ import "swiper/swiper.min.css";
 import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
 
-import slide1 from "../assets/hero_bg.png";
-import slide2 from "../assets/slide2.png";
-import slide3 from "../assets/slide3.png";
+import { slide1 } from "../assets/slider";
+import { slide2 } from "../assets/slider";
+import { slide3 } from "../assets/slider";
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay } from "swiper/core";
