@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import ProductBody from "../components/ProductBody";
 import ScrollToTop from "../components/ScrollToTop";
 
+
+
 const Products = () => {
 	return (
 		<div>

@@ -13,8 +13,15 @@ const ProductBody = () => {
 				<div className="container-fluid">
 					<div className="row">
 						{/* FIRST START */}
-						<div className="col-6">
-							<img className="w-100" src={p1} alt="p1" />
+						<div className="col-6 position-relative">
+							<img
+								data-aos="fade-right"
+								data-aos-anchor-placement="bottom"
+								data-aos-offset="600"
+								className="w-100"
+								src={p1}
+								alt="p1"
+							/>
 						</div>
 						<div className="col-6 align-self-center text-center">
 							<h6>LIGHTING</h6>
@@ -41,13 +48,27 @@ const ProductBody = () => {
 							<button className="px-5 py-1">Explore</button>
 						</div>
 						<div className="col-7">
-							<img className="w-100" src={p2} alt="p1" />
+							<img
+								data-aos="fade-left"
+								data-aos-anchor-placement="bottom"
+								data-aos-offset="600"
+								className="w-100"
+								src={p2}
+								alt="p1"
+							/>
 						</div>
 						{/* SECOND END */}
 
 						{/* THIRD START */}
 						<div className="col-6">
-							<img className="w-100" src={p3} alt="p3" />
+							<img
+								data-aos="fade-right"
+								data-aos-anchor-placement="bottom"
+								data-aos-offset="1000"
+								className="w-100"
+								src={p3}
+								alt="p3"
+							/>
 						</div>
 						<div className="col-6 align-self-center text-center">
 							<h6>VANITY COUNTERS & MIRROR FRAMES</h6>
@@ -75,7 +96,14 @@ const ProductBody = () => {
 							<button className="px-5 py-1">Explore</button>
 						</div>
 						<div className="col-7">
-							<img className="w-100" src={p4} alt="p4" />
+							<img
+								data-aos="fade-left"
+								data-aos-anchor-placement="bottom"
+								data-aos-offset="1500"
+								className="w-100"
+								src={p4}
+								alt="p4"
+							/>
 						</div>
 						{/* THIRD END */}
 					</div>

@@ -74,8 +74,6 @@ html {
 }
 
 .hero_section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(7, 7, 7, 0.35))), url("../assets/hero_bg.png");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(7, 7, 7, 0.35)), url("../assets/hero_bg.png");
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -113,6 +111,14 @@ html {
   line-height: 21px;
   color: #e7e7e7;
   font-size: 1.125rem;
+}
+
+.mySwiper img {
+  height: 100vh;
+}
+
+.swiper-container {
+  z-index: 0 !important;
 }
 
 .header_container {
@@ -191,21 +197,15 @@ html {
 }
 
 .feature_container .gallery_inner2 .gallery-item:nth-child(5) {
+  height: 81% !important;
   grid-column: span 16;
   grid-row: span 1;
 }
 
-.feature_container .gallery_inner2 .gallery-item:nth-child(5) img {
-  height: 81% !important;
-}
-
 .feature_container .gallery_inner2 .gallery-item:nth-child(6) {
+  height: 81% !important;
   grid-column: span 4;
   grid-row: span 1;
-}
-
-.feature_container .gallery_inner2 .gallery-item:nth-child(6) img {
-  height: 81% !important;
 }
 
 .feature_container .gallery {
@@ -249,6 +249,23 @@ html {
       grid-template-columns: repeat(20, 1fr);
   -ms-grid-rows: (auto-flow)[3];
       grid-template-rows: repeat(3, auto-flow);
+}
+
+/* Within Container */
+.zoom-within-container {
+  overflow: hidden;
+}
+
+.zoom-within-container img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.zoom-within-container:hover img {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
 }
 
 .client_container {

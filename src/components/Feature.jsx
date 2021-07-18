@@ -24,7 +24,7 @@ const Feature = () => {
 							<div className="left">
 								{data.map((p, i) => {
 									return (
-										<div key={i} class="gallery-item">
+										<div key={i} class="gallery-item zoom-within-container">
 											<img src={p} alt="" />
 										</div>
 									);
@@ -35,7 +35,7 @@ const Feature = () => {
 							<div className="right">
 								{data1.map((p, i) => {
 									return (
-										<div key={i} class="gallery-item">
+										<div key={i} class="gallery-item zoom-within-container">
 											<img src={p} alt="" />
 										</div>
 									);

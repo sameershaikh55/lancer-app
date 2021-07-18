@@ -5,6 +5,7 @@ import s1 from "../assets/service/s1.png";
 import s2 from "../assets/service/s2.png";
 import s3 from "../assets/service/s3.png";
 import castle from "../assets/service/castle.png";
+import Fade from "react-reveal/Fade";
 
 const Service = () => {
 	const data = [
@@ -52,7 +53,9 @@ const Service = () => {
 
 						{/* CASTLE IMAGE START */}
 						<div className="caste_container position-absolute">
-							<img src={castle} alt="castle" />
+							<Fade right>
+								<img src={castle} alt="castle" />
+							</Fade>
 						</div>
 						{/* CASTLE IMAGE END */}
 					</div>
