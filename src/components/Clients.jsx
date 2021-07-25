@@ -13,7 +13,7 @@ import c8 from "../assets/clients/c8.png";
 const Clients = () => {
 	const data = [c1, c2, c3, c4, c5, c6, c7, c8];
 	return (
-		<div className="client_container mb-5">
+		<div className="client_container d-none d-md-block mb-5">
 			<div className="page_container">
 				<div className="container-fluid">
 					<h2 className="lightGray heading text-center mb-1">Our Clients</h2>

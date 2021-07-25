@@ -13,8 +13,14 @@ const Home = () => {
 	return (
 		<>
 			<ScrollToTop />
-			<Hero />
-			<Header />
+			<div className="d-none d-md-block">
+				<Hero />
+				<Header />
+			</div>
+			<div className="d-block d-md-none">
+				<Header />
+				<Hero />
+			</div>
 			<Service />
 			<Feature />
 			<Clients />

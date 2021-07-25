@@ -4,7 +4,7 @@ import { SiFacebook, SiInstagram } from "react-icons/si";
 
 const Footer = () => {
 	return (
-		<div className="footer_container pt-4">
+		<div className="footer_container d-none d-md-block pt-4">
 			<div className="page_container pb-4">
 				<div className="container-fluid">
 					<div className="upper_portion d-flex justify-content-between w-100">
