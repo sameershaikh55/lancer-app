@@ -6,7 +6,7 @@ import phone from "../assets/phone.png";
 import phoneD from "../assets/phoneDark.png";
 import { NavLink } from "react-router-dom";
 
-const Header = ({ products }) => {
+const Header = ({ products, ClickEvent }) => {
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -122,7 +122,12 @@ const Header = ({ products }) => {
 							{(products && "Products") || "Home"}
 						</h2>
 						<div className="hamberger position-absolute bg-white shadow-sm px-2">
-							<svg viewBox="0 0 100 80" width="40" height="40">
+							<svg
+								onClick={ClickEvent}
+								viewBox="0 0 100 80"
+								width="40"
+								height="40"
+							>
 								<rect width="100" height="15" rx="10" fill="#064e6e"></rect>
 								<rect
 									y="30"
