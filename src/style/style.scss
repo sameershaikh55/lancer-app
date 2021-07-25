@@ -27,6 +27,10 @@ html {
 	font-size: 100%;
 	width: 100%;
 	overflow-x: hidden;
+
+	body {
+		overflow-x: hidden;
+	}
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -77,6 +81,10 @@ html {
 	color: #a6a6a6;
 }
 
+.lightGray3 {
+	color: #6c6c6c;
+}
+
 .darkColor {
 	color: #064e6e;
 }
@@ -98,6 +106,19 @@ html {
 	color: #43ade8;
 }
 
+.skyBg {
+	background-color: #e3ecf3;
+}
+
+.themeBtn {
+	border-radius: 5px;
+	background-image: linear-gradient(
+		234deg,
+		#00c2ee 0%,
+		#1ea0d0 57%,
+		#007bbc 100%
+	);
+}
 // GLOBAL CLASSES END
 
 // HERO SECTION START
@@ -652,10 +673,18 @@ html {
 			}
 		}
 	}
+}
+.mFooter {
+	background-color: #e3ecf3;
+}
 
-	.mFooter {
-		background-color: #e3ecf3;
-	}
+// PRODUCT FOOTER
+.footerPM_container {
+	background: url(../assets/pFooter.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 255px;
 }
 // MOBILE END
 

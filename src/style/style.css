@@ -38,6 +38,10 @@ html {
   overflow-x: hidden;
 }
 
+html body {
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 992px) {
   html {
     font-size: 100%;
@@ -92,6 +96,10 @@ html {
   color: #a6a6a6;
 }
 
+.lightGray3 {
+  color: #6c6c6c;
+}
+
 .darkColor {
   color: #064e6e;
 }
@@ -111,6 +119,15 @@ html {
 
 .blueColor {
   color: #43ade8;
+}
+
+.skyBg {
+  background-color: #e3ecf3;
+}
+
+.themeBtn {
+  border-radius: 5px;
+  background-image: linear-gradient(234deg, #00c2ee 0%, #1ea0d0 57%, #007bbc 100%);
 }
 
 .hero_section {
@@ -655,8 +672,16 @@ html {
   outline: none;
 }
 
-.feature_containerM .mFooter {
+.mFooter {
   background-color: #e3ecf3;
+}
+
+.footerPM_container {
+  background: url(../assets/pFooter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 255px;
 }
 
 @media screen and (max-width: 998px) {

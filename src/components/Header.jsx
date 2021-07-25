@@ -118,7 +118,9 @@ const Header = ({ products }) => {
 								<img src={logo} alt="logo" />
 							</NavLink>
 						</div>
-						<h2 className="page_head darkColor mt-3">Home</h2>
+						<h2 className="page_head darkColor mt-3">
+							{(products && "Products") || "Home"}
+						</h2>
 						<div className="hamberger position-absolute bg-white shadow-sm px-2">
 							<svg viewBox="0 0 100 80" width="40" height="40">
 								<rect width="100" height="15" rx="10" fill="#064e6e"></rect>

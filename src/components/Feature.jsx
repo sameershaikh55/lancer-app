@@ -169,13 +169,13 @@ const Feature = () => {
 				</div>
 
 				<div className="mFooter py-3 mt-5 d-flex justify-content-end px-3">
-					<NavLink className="lightGray text-decoration-none" to="">
+					<NavLink className="lightGray text-decoration-none small" to="">
 						Privacy Policy
 					</NavLink>
-					<NavLink className="lightGray ms-4 text-decoration-none" to="">
+					<NavLink className="lightGray ms-4 text-decoration-none small" to="">
 						Sitemap
 					</NavLink>
-					<NavLink className="lightGray ms-4 text-decoration-none" to="">
+					<NavLink className="lightGray ms-4 text-decoration-none small" to="">
 						Copyright
 					</NavLink>
 				</div>
