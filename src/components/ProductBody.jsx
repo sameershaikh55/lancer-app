@@ -130,7 +130,14 @@ const ProductBody = () => {
           <div className="container-fluid px-0">
             <div className="row px-0">
               <div className="col-6 pe-0">
-                <img className="w-100" src={p1M} alt="" />
+                <img
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom"
+                  data-aos-offset="300"
+                  className="w-100"
+                  src={p1M}
+                  alt=""
+                />
               </div>
               <div className="col-6 ps-0">
                 <h6 className="lightGray3 ms-2">LIGHTING</h6>
@@ -162,11 +169,25 @@ const ProductBody = () => {
                 </div>
               </div>
               <div className="col-6 ps-0 mt-5">
-                <img className="w-100" src={p2M} alt="" />
+                <img
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="bottom"
+                  data-aos-offset="300"
+                  className="w-100"
+                  src={p2M}
+                  alt=""
+                />
               </div>
 
               <div className="col-6 pe-0 mt-5">
-                <img className="w-100" src={p3M} alt="" />
+                <img
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom"
+                  data-aos-offset="300"
+                  className="w-100"
+                  src={p3M}
+                  alt=""
+                />
               </div>
               <div className="col-6 mt-5 ps-0">
                 <h6 className="lightGray3 ps-2">COUNTERS & MIRROR FRAMES</h6>
@@ -202,7 +223,14 @@ const ProductBody = () => {
                 </div>
               </div>
               <div className="col-6 ps-0 mt-5">
-                <img className="w-100" src={p4M} alt="" />
+                <img
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="bottom"
+                  data-aos-offset="300"
+                  className="w-100"
+                  src={p4M}
+                  alt=""
+                />
               </div>
             </div>
           </div>

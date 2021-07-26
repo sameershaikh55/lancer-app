@@ -12,26 +12,26 @@ import Sidebar from "../components/Sidebar";
 import { useHooks } from "../Hooks/useHooks";
 
 const Home = () => {
-	const { isOpen, OnClick } = useHooks();
+  const { isOpen, OnClick } = useHooks();
 
-	return (
-		<>
-			<Sidebar ClickEvent={OnClick} isOpen={isOpen} />
-			<ScrollToTop />
-			<div className="d-none d-md-block">
-				<Hero />
-				<Header />
-			</div>
-			<div className="d-block d-md-none">
-				<Header ClickEvent={OnClick} />
-				<Hero />
-			</div>
-			<Service />
-			<Feature />
-			<Clients />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Sidebar ClickEvent={OnClick} isOpen={isOpen} />
+      <ScrollToTop />
+      <div className="d-none d-md-block">
+        <Hero />
+        <Header />
+      </div>
+      <div className="d-block d-md-none">
+        <Header ClickEvent={OnClick} />
+        <Hero />
+      </div>
+      <Service />
+      <Feature />
+      <Clients />
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
