@@ -40,7 +40,7 @@ const Service = () => {
 	return (
 		<>
 			{/* DESKTOP START */}
-			<div className="service_container d-none d-md-block my-5">
+			<div className="service_container d-none d-md-block">
 				<div className="page_container">
 					<div className="container-fluid">
 						<h2 className="lightGray heading text-center mb-5">Our Services</h2>

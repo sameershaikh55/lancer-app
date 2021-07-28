@@ -15,7 +15,7 @@ const Header = ({ products, ClickEvent }) => {
 				className="header_container d-none d-md-block my-3"
 			>
 				<div className="page_container">
-					<div className="container-fluid">
+					<div className="container-fluid px-4">
 						<div className="d-flex align-items-center justify-content-between">
 							<div className="logo">
 								<NavLink to="/">
