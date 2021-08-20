@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTS
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import phone from "../assets/phone.png";
 import phoneD from "../assets/phoneDark.png";
 import { NavLink } from "react-router-dom";
@@ -14,8 +14,10 @@ const Header = ({ products, ClickEvent }) => {
 				style={{ position: products && "static" }}
 				className="header_container d-none d-md-block my-3"
 			>
-				<div className="page_container">
-					<div className="container-fluid px-4">
+				<div
+					className={`${(products && "page_container2") || "page_container"} `}
+				>
+					<div className="container-fluid px-5">
 						<div className="d-flex align-items-center justify-content-between">
 							<div className="logo">
 								<NavLink to="/">

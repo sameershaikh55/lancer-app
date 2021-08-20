@@ -27,7 +27,7 @@ import { NavLink } from "react-router-dom";
 
 const Feature = () => {
 	const data = [f1, f4];
-	const data1 = [f2, f3, f5, f6, f7, f8];
+	const data1 = [f2, f3, f6, f5, f7, f8];
 
 	const dataM = [fm1, fm2, fm3];
 	const data1M = [fm4, fm5, fm6];
@@ -38,7 +38,7 @@ const Feature = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="feature_container d-none d-md-block my-5">
-						<h2 className="lightGray heading text-center mb-5">Featured</h2>
+						<h2 className="lightGray heading text-center">Featured Products</h2>
 						{/* <!-- Gallery --> */}
 						<div class="gallery">
 							<div className="gallery_inner1">
@@ -136,7 +136,7 @@ const Feature = () => {
 									</div>
 								</div>
 
-								<p className="text-white mt-5">
+								<p className="text-white extraSpace">
 									Take a drive, come say hello! <br /> If not, sign up to our
 									Newsletter.
 								</p>

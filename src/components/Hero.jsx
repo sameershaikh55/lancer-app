@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // IMPORTS
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,7 +19,15 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 // SwiperCore.slideNext([]);
 
-const hero = () => {
+const Hero = () => {
+	const [titleS, setTitleS] = useState(true);
+
+	useEffect(() => {
+		setTimeout(function () {
+			setTitleS(false);
+		}, 3500);
+	}, []);
+
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -39,9 +47,11 @@ const hero = () => {
 								<img src={slide1} alt="" />
 								<div className="page_container">
 									<div className="container-fluid">
-										<h1 className="main_head position-absolute text-white">
-											Outdoors & Beyond
-										</h1>
+										{titleS && (
+											<h1 className="main_head position-absolute text-white">
+												Outdoors & Beyond
+											</h1>
+										)}
 
 										<div className="position-absolute hero_text_content text-white">
 											<h4 className="mb-4">
@@ -63,9 +73,9 @@ const hero = () => {
 								<img src={slide2} alt="" />
 								<div className="page_container">
 									<div className="container-fluid">
-										<h1 className="main_head position-absolute text-white">
+										{/* <h1 className="main_head position-absolute text-white">
 											Outdoors & Beyond
-										</h1>
+										</h1> */}
 
 										<div className="position-absolute hero_text_content text-white">
 											<h4 className="mb-4">
@@ -87,9 +97,9 @@ const hero = () => {
 								<img src={slide3} alt="" />
 								<div className="page_container">
 									<div className="container-fluid">
-										<h1 className="main_head position-absolute text-white">
+										{/* <h1 className="main_head position-absolute text-white">
 											Outdoors & Beyond
-										</h1>
+										</h1> */}
 
 										<div className="position-absolute hero_text_content text-white">
 											<h4 className="mb-4">
@@ -125,34 +135,36 @@ const hero = () => {
 						>
 							<SwiperSlide>
 								<img src={slide1} alt="" />
-								<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
-									Outdoors & Beyond
-								</h1>
+								{titleS && (
+									<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
+										Outdoors & Beyond
+									</h1>
+								)}
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={slide3} alt="" />
-								<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
+								{/* <h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
 									Outdoors & Beyond
-								</h1>
+								</h1> */}
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={slide2} alt="" />
-								<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
+								{/* <h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
 									Outdoors & Beyond
-								</h1>
+								</h1> */}
 							</SwiperSlide>
 
 							<SwiperSlide>
 								<img src={slide4} alt="" />
-								<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
+								{/* <h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
 									Outdoors & Beyond
-								</h1>
+								</h1> */}
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={slide5} alt="" />
-								<h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
+								{/* <h1 className="main_head position-absolute text-white text-center w-100 mx-auto">
 									Outdoors & Beyond
-								</h1>
+								</h1> */}
 							</SwiperSlide>
 						</Swiper>
 					</div>
@@ -163,4 +175,4 @@ const hero = () => {
 	);
 };
 
-export default hero;
+export default Hero;

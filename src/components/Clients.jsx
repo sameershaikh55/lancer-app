@@ -16,7 +16,7 @@ const Clients = () => {
 		<div className="client_container d-none d-md-block mb-5">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="lightGray heading text-center mb-1">Our Clients</h2>
+					<h2 className="lightGray heading text-center mb-5">Our Clients</h2>
 
 					<div className="client_inner d-flex flex-wrap align-items-center justify-content-center">
 						{data.map((prev, i) => {

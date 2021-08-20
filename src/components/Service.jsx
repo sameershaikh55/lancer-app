@@ -83,7 +83,7 @@ const Service = () => {
 			{/* DESKTOP END */}
 
 			{/* MOBILE START */}
-			<div className="service_containerM d-block d-md-none my-5">
+			<div className="service_containerM position-relative d-block d-md-none my-5">
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
@@ -91,6 +91,11 @@ const Service = () => {
 								<h4 className="heading text-dark fw600 text-center mb-3">
 									Our Services
 								</h4>
+								<img
+									className="position-absolute imageFrame"
+									src={imageFrame}
+									alt="imageFrame"
+								/>
 								<Swiper
 									// className="mySwiper"
 									pagination={false}
@@ -107,7 +112,7 @@ const Service = () => {
 													Design
 												</h6>
 												<div className="text-center my-4">
-													<img src={imageFrame} alt="imageFrame" />
+													<img className="service_img" src={s1} alt="" />
 												</div>
 
 												<p className="lightGray text-center">
@@ -125,7 +130,8 @@ const Service = () => {
 													Installation
 												</h6>
 												<div className="text-center my-4">
-													<img src={imageFrame} alt="imageFrame" />
+													<img className="service_img" src={s3} alt="" />
+													{/* <img src={imageFrame} alt="imageFrame" /> */}
 												</div>
 
 												<p className="lightGray text-center">

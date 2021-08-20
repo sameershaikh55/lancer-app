@@ -36,7 +36,7 @@ const ProductBody = () => {
 								/>
 							</div>
 							<div className="col-6 align-self-center text-center">
-								<h6>LIGHTING</h6>
+								<h5>LIGHTING</h5>
 								<div className="w-50 mx-auto my-3">
 									<p className="small">
 										Our incredible breadth of on-trend products is designed for
@@ -44,20 +44,20 @@ const ProductBody = () => {
 										consistent look throughout a home, inside and out.
 									</p>
 								</div>
-								<button className="px-5 py-1">Explore</button>
+								<button className="px-5 py-2 productColor">Explore</button>
 							</div>
 							{/* FIRST END */}
 
 							{/* SECOND START */}
 							<div className="col-5 align-self-center text-center">
-								<h6>OUTDOOR LIVING</h6>
+								<h5>OUTDOOR LIVING</h5>
 								<div className="w-50 mx-auto my-3">
 									<p className="small">
 										Principled on design, comfort & quality. These collections
 										set a new standard for outdoor living.
 									</p>
 								</div>
-								<button className="px-5 py-1">Explore</button>
+								<button className="px-5 py-2 productColor">Explore</button>
 							</div>
 							<div className="col-7">
 								<img
@@ -83,7 +83,7 @@ const ProductBody = () => {
 								/>
 							</div>
 							<div className="col-6 align-self-center text-center">
-								<h6>VANITY COUNTERS & MIRROR FRAMES</h6>
+								<h5>VANITY COUNTERS & MIRROR FRAMES</h5>
 								<div className="w-50 mx-auto my-3">
 									<p className="small">
 										Our latest range of vanity counters and high detail mirror
@@ -91,13 +91,13 @@ const ProductBody = () => {
 										washroom.
 									</p>
 								</div>
-								<button className="px-5 py-1">Explore</button>
+								<button className="px-5 py-2 productColor">Explore</button>
 							</div>
 							{/* THIRD END */}
 
 							{/* THIRD START */}
 							<div className="col-5 align-self-center text-center">
-								<h6>CUSTOM PROJECTS</h6>
+								<h5>CUSTOM PROJECTS</h5>
 								<div className="w-50 mx-auto my-3">
 									<p className="small">
 										Our creative team work closely with our clients to
@@ -105,7 +105,7 @@ const ProductBody = () => {
 										design process of the perfect space.
 									</p>
 								</div>
-								<button className="px-5 py-1">Explore</button>
+								<button className="px-5 py-2 productColor">Explore</button>
 							</div>
 							<div className="col-7">
 								<img
@@ -129,7 +129,7 @@ const ProductBody = () => {
 				<div className="page_container">
 					<div className="container-fluid px-0">
 						<div className="row px-0">
-							<div className="col-6 pe-0">
+							<div className="col-6 mt-5 pe-0">
 								<img
 									data-aos="fade-right"
 									data-aos-anchor-placement="bottom"
@@ -139,7 +139,7 @@ const ProductBody = () => {
 									alt=""
 								/>
 							</div>
-							<div className="col-6 ps-0">
+							<div className="col-6 mt-5 ps-0">
 								<h6 className="lightGray3 ms-2">LIGHTING</h6>
 								<div className="skyBg pt-1 pb-2 ps-2">
 									<p className="lightGray small mb-1 lh-sm">
@@ -154,7 +154,7 @@ const ProductBody = () => {
 								</div>
 							</div>
 
-							<div className="col-6 mt-5 pe-0">
+							<div className="col-6 productCard pe-0">
 								<h6 className="lightGray3 text-end me-2">OUTDOOR LIVING</h6>
 								<div className="skyBg pt-1 pb-2 text-end pe-2">
 									<p className="lightGray small mb-1 lh-sm">
@@ -168,7 +168,7 @@ const ProductBody = () => {
 									</div>
 								</div>
 							</div>
-							<div className="col-6 ps-0 mt-5">
+							<div className="col-6 ps-0 productCard">
 								<img
 									data-aos="fade-left"
 									data-aos-anchor-placement="bottom"
@@ -179,7 +179,7 @@ const ProductBody = () => {
 								/>
 							</div>
 
-							<div className="col-6 pe-0 mt-5">
+							<div className="col-6 pe-0 productCard">
 								<img
 									data-aos="fade-right"
 									data-aos-anchor-placement="bottom"
@@ -189,7 +189,7 @@ const ProductBody = () => {
 									alt=""
 								/>
 							</div>
-							<div className="col-6 mt-5 ps-0">
+							<div className="col-6 productCard ps-0">
 								<h6 className="lightGray3 ps-2">COUNTERS & MIRROR FRAMES</h6>
 								<div className="skyBg pt-1 pb-2 lh-sm ps-2">
 									<p className="lightGray small mb-1">
@@ -205,7 +205,7 @@ const ProductBody = () => {
 								</div>
 							</div>
 
-							<div className="col-6 mt-5 pe-0">
+							<div className="col-6 productCard pe-0">
 								<h6 className="text-uppercase lightGray3 text-end pe-2">
 									custom projects
 								</h6>
@@ -222,7 +222,7 @@ const ProductBody = () => {
 									</div>
 								</div>
 							</div>
-							<div className="col-6 ps-0 mt-5">
+							<div className="col-6 ps-0 productCard">
 								<img
 									data-aos="fade-left"
 									data-aos-anchor-placement="bottom"

@@ -1,7 +1,7 @@
 import React from "react";
 import { ImCross } from "react-icons/im";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 
 const Sidebar = ({ isOpen, ClickEvent }) => {
 	return (
